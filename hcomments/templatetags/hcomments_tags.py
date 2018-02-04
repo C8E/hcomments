@@ -109,7 +109,7 @@ def gravatar(email, args=''):
     rating = args.get('rating', 'r')
 
     # construct the url
-    gravatar_url = 'http://www.gravatar.com/avatar/%s?' % hashlib.md5(email.lower()).hexdigest()
+    gravatar_url = 'https://www.gravatar.com/avatar/%s?' % hashlib.md5(email.lower()).hexdigest()
     gravatar_url += urllib.urlencode({
         'default': default,
         'size': str(size),
